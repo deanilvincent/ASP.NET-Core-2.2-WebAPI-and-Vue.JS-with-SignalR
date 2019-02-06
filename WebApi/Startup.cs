@@ -21,6 +21,7 @@ namespace WebApi
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            // allow only this site
             services.AddCors(options => options.AddPolicy("CorsPolicy",
                 builder =>
                 {
